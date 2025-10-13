@@ -48,3 +48,34 @@ li{
     display: flex;
     gap: 40px;
 }
+
+@media (max-width: 600px){
+    .profile-container{
+        flex-direction: column;
+    }
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.project-layout{
+    display: flex;
+}
+
+.project-main{
+    flex: 1;
+
+}
+
+.project-sidebar{
+    flex-basis: 200px;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
