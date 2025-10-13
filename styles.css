@@ -4,7 +4,7 @@ h1{
 }
 
 body{
-    font-family: sans-serif;
+    font-family: "Roboto",sans-serif;
     padding: 20px;
     background-color: #f4f4f4;
 }
@@ -35,6 +35,8 @@ ul{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
 }
 
 li{
@@ -42,6 +44,9 @@ li{
     border: 1px solid #ccc;
     background-color: #ffffff;
     flex-basis: 150px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
 .profile-container{
@@ -78,4 +83,9 @@ footer{
 .container{
     max-width: 960px;
     margin: 0 auto;
+}
+
+li:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
