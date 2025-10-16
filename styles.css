@@ -1,12 +1,21 @@
-h1{
-    color:purple;
-    text-align:center;
+:root {
+  --primary-color: purple;
+  --light-grey: #f4f4f4;
+  --dark-text: #333;
+  --border-color:#ccc;
+  --white:#ffffff;
+  --nav-background:#eee
+}
+
+h1 {
+  color: var(--primary-color);
+  text-align: center;
 }
 
 body{
     font-family: "Roboto",sans-serif;
     padding: 20px;
-    background-color: #add8e6;
+    background-color: var(--light-grey);
 }
 
 .highlight{
@@ -14,7 +23,7 @@ body{
 }
 
 a{
-  color: #333;
+  color: var(--primary-color);
   text-decoration: none;
   transition: 0.3s;
 }
@@ -28,7 +37,7 @@ nav{
     gap: 20px;
     align-items: center;
     height: 50px;
-    background-color: #eee;
+    background-color: var(--nav-background);
     justify-content: space-between;
 }
 
@@ -42,8 +51,8 @@ ul{
 
 li{
     padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    background-color: var(--white);
     flex-basis: 150px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -62,8 +71,8 @@ li{
 }
 
 footer{
-    background-color: #333;
-    color: #fff;
+    background-color: var(--dark-text);
+    color: var(--white);
     text-align: center;
     padding: 20px 0;
 }
@@ -77,10 +86,6 @@ footer{
 
 }
 
-.project-sidebar{
-    flex-basis: 200px;
-}
-
 .container{
     max-width: 960px;
     margin: 0 auto;
@@ -92,10 +97,11 @@ li:hover{
 }
 
 .project-sidebar{
-    background-color: #ffffff;
+    background-color: var(--white);
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0;
+    flex-basis: 200px;
 }
 
 .footer-container{
@@ -109,5 +115,14 @@ footer ul{
 }
 
 footer a{
-    color: #180202;
+    color: var(--dark-text);
+}
+
+.btn{
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
 }
