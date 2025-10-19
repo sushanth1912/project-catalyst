@@ -3,18 +3,26 @@ console.log(projectName);
 const userAge = 24;
 let isNewUser = true;
 
-const pageTitle = document.querySelector('h1');
-pageTitle.textContent = 'A New Title is yet to come';
+//const pageTitle = document.querySelector('h1');
+//pageTitle.textContent = 'A New Title is yet to come';
 
-const applyButton = document.querySelector('.btn');
+//const applyButton = document.querySelector('.btn');
 
-applyButton.addEventListener('click', function(){
-    console.log('The button was clicked!');
-})
+//applyButton.addEventListener('click', function(){
+ //   console.log('The button was clicked!');
+//})
 
-const profileTitle = document.querySelector('h1');
-const aboutMeParagraph = document.querySelector('p');
+//const profileTitle = document.querySelector('h1');
+//const aboutMeParagraph = document.querySelector('p');
 
-profileTitle.addEventListener('click', function(){
-    aboutMeParagraph.textContent = 'This is my new bio';
+//profileTitle.addEventListener('click', function(){
+ //   aboutMeParagraph.textContent = 'This is my new bio';
+//});
+
+const firstProjectCard = document.querySelector('li');
+const projectsHeading = document.querySelector('h2')
+
+firstProjectCard.addEventListener('click', function(event) {
+    event.preventDefault();
+    projectsHeading.textContent = 'New Projects will be announced soon!';
 });
